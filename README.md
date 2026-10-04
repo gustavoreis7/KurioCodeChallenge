@@ -157,8 +157,8 @@ passam por `socket.io-client` interceptado pelo binding MSW.
 
 ## Entrega Publica
 
-Hospedagem escolhida: Vercel. Nome informado: `KurioFrontEndChallenge`.
-`vercel.json` seleciona TanStack Start e `npm run build:vercel`; o adapter Nitro
+Hospedagem escolhida: Vercel. Nome informado: `https://kuriocodechallenge.vercel.app`.
+seleciona TanStack Start e `npm run build:vercel`; o adapter Nitro
 gera as funcoes e os assets de deploy. Configure Node 22 e mantenha os mocks
 ativos (nao defina `VITE_ENABLE_MOCKS=false`). Nao use um rewrite generico para
 `index.html`: o projeto usa SSR e o adapter encaminha as rotas.
