@@ -1,0 +1,8 @@
+node_modules
+dist
+src/routeTree.gen.ts
+public/mockServiceWorker.js
+test-results
+playwright-report
+reports
+.tanstack

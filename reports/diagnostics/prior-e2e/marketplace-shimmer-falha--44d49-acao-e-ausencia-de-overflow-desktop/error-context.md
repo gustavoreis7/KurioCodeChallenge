@@ -1,0 +1,241 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: marketplace.spec.ts >> shimmer, falha de rede, recuperacao e ausencia de overflow
+- Location: tests\e2e\marketplace.spec.ts:376:1
+
+# Error details
+
+```
+Error: page.evaluate: CanceledError: Resposta da sessao anterior descartada
+    at at.interceptors.response.use.t (http://127.0.0.1:4173/assets/http-1_So95VW.js:9:8302)
+    at async Y.request (http://127.0.0.1:4173/assets/http-1_So95VW.js:5:2175)
+    at async Object.post (http://127.0.0.1:4173/assets/browser--9rMsszt.js:66:59333)
+    at async <anonymous>:337:30
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f1e1]:
+  - status
+  - link "Ir para o conteudo" [ref=f1e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=f1e3]:
+    - banner [ref=f1e4]:
+      - link "Kurio, inicio" [ref=f1e5] [cursor=pointer]:
+        - /url: /
+        - text: KURIO
+      - navigation "Navegacao principal" [ref=f1e6]:
+        - link "Inicio" [ref=f1e7] [cursor=pointer]:
+          - /url: /
+        - link "Mercado" [ref=f1e8] [cursor=pointer]:
+          - /url: /#catalogo
+        - button "Criadores" [ref=f1e9] [cursor=pointer]
+        - button "Aprenda" [ref=f1e10] [cursor=pointer]
+      - generic [ref=f1e11]:
+        - button "Buscar NFTs" [ref=f1e12] [cursor=pointer]
+        - button "Abrir carrinho com 0 itens" [ref=f1e13] [cursor=pointer]
+        - link "Entrar" [ref=f1e14] [cursor=pointer]:
+          - /url: /login?redirect=%2F%3Fq%3D%26categories%3D%255B%255D%26sort%3Drecent%26page%3D1%26pageSize%3D9
+    - main [ref=f1e18]:
+      - region [ref=f1e19]:
+        - generic [ref=f1e20]:
+          - paragraph [ref=f1e21]: Bem-vindo a Kurio
+          - heading "SEJA DONO DO FUTURO. DA ARTE DIGITAL." [level=1] [ref=f1e22]: SEJA DONO DO FUTURO.DA ARTE DIGITAL.
+          - paragraph [ref=f1e23]: Explore colecoes limitadas e encontre sua proxima obra.
+          - link "Explorar" [ref=f1e24] [cursor=pointer]:
+            - /url: "#catalogo"
+        - img "Retrato Mutt 001" [ref=f1e25]
+      - region "Mercado de NFTs" [ref=f1e26]:
+        - complementary "Filtros do catalogo" [ref=f1e27]:
+          - heading "Colecoes" [level=2] [ref=f1e28]
+          - generic [ref=f1e29] [cursor=pointer]:
+            - checkbox "Arte digital" [ref=f1e30]
+            - text: Arte digital
+          - generic [ref=f1e31] [cursor=pointer]:
+            - checkbox "Raros" [ref=f1e32]
+            - text: Raros
+          - generic [ref=f1e33] [cursor=pointer]:
+            - checkbox "Lendarios" [ref=f1e34]
+            - text: Lendarios
+          - generic [ref=f1e35] [cursor=pointer]:
+            - checkbox "Novidades" [ref=f1e36]
+            - text: Novidades
+          - generic [ref=f1e37]:
+            - heading "Faixa de preco" [level=2] [ref=f1e38]
+            - generic [ref=f1e39]:
+              - generic [ref=f1e40]: Minimo (ETH)
+              - textbox "Minimo (ETH)" [ref=f1e41]
+            - generic [ref=f1e42]:
+              - generic [ref=f1e43]: Maximo (ETH)
+              - textbox "Maximo (ETH)" [ref=f1e44]
+            - button "Aplicar" [ref=f1e45] [cursor=pointer]
+          - generic [ref=f1e46] [cursor=pointer]:
+            - checkbox "Somente disponiveis" [ref=f1e47]
+            - text: Somente disponiveis
+          - button "Limpar filtros" [ref=f1e48] [cursor=pointer]
+        - generic [ref=f1e49]:
+          - generic [ref=f1e50]:
+            - search [ref=f1e51]:
+              - generic [ref=f1e52]: Buscar NFTs
+              - searchbox "Buscar NFTs" [ref=f1e53]
+              - button "Buscar" [ref=f1e54] [cursor=pointer]
+            - generic [ref=f1e55]:
+              - text: Ordenar
+              - combobox "Ordenar" [ref=f1e56] [cursor=pointer]:
+                - option "Listados recentemente" [selected]
+                - option "Menor preco"
+                - option "Maior preco"
+                - option "Nome"
+          - generic [ref=f1e57]:
+            - article [ref=f1e58]:
+              - generic [ref=f1e59]:
+                - 'link "Ver Mutt #831" [ref=f1e60] [cursor=pointer]':
+                  - /url: /nfts/001
+                  - img "Retrato Mutt 001" [ref=f1e61]
+                - 'button "Favoritar Mutt #831" [ref=f1e62] [cursor=pointer]'
+              - generic [ref=f1e63]:
+                - 'link "Mutt #831" [ref=f1e64] [cursor=pointer]':
+                  - /url: /nfts/001
+                - paragraph [ref=f1e65]: 1.48 ETH
+                - 'button "Adicionar Mutt #831 ao carrinho" [ref=f1e66] [cursor=pointer]'
+            - article [ref=f1e67]:
+              - generic [ref=f1e68]:
+                - 'link "Ver Mutt #832" [ref=f1e69] [cursor=pointer]':
+                  - /url: /nfts/002
+                  - img "Retrato Mutt 002" [ref=f1e70]
+                - 'button "Favoritar Mutt #832" [ref=f1e71] [cursor=pointer]'
+              - generic [ref=f1e72]:
+                - 'link "Mutt #832" [ref=f1e73] [cursor=pointer]':
+                  - /url: /nfts/002
+                - paragraph [ref=f1e74]: 0.92 ETH
+                - 'button "Adicionar Mutt #832 ao carrinho" [ref=f1e75] [cursor=pointer]'
+            - article [ref=f1e76]:
+              - generic [ref=f1e77]:
+                - 'link "Ver Mutt #833" [ref=f1e78] [cursor=pointer]':
+                  - /url: /nfts/003
+                  - img "Retrato Mutt 003" [ref=f1e79]
+                - 'button "Favoritar Mutt #833" [ref=f1e80] [cursor=pointer]'
+              - generic [ref=f1e81]:
+                - 'link "Mutt #833" [ref=f1e82] [cursor=pointer]':
+                  - /url: /nfts/003
+                - paragraph [ref=f1e83]: 1.12 ETH
+                - 'button "Adicionar Mutt #833 ao carrinho" [ref=f1e84] [cursor=pointer]'
+            - article [ref=f1e85]:
+              - generic [ref=f1e86]:
+                - 'link "Ver Mutt #834" [ref=f1e87] [cursor=pointer]':
+                  - /url: /nfts/004
+                  - img "Retrato Mutt 004" [ref=f1e88]
+                - 'button "Favoritar Mutt #834" [ref=f1e89] [cursor=pointer]'
+              - generic [ref=f1e90]:
+                - 'link "Mutt #834" [ref=f1e91] [cursor=pointer]':
+                  - /url: /nfts/004
+                - paragraph [ref=f1e92]: 2.35 ETH
+                - 'button "Adicionar Mutt #834 ao carrinho" [ref=f1e93] [cursor=pointer]'
+            - article [ref=f1e94]:
+              - generic [ref=f1e95]:
+                - 'link "Ver Mutt #835" [ref=f1e96] [cursor=pointer]':
+                  - /url: /nfts/005
+                  - img "Retrato Mutt 005" [ref=f1e97]
+                - 'button "Favoritar Mutt #835" [ref=f1e98] [cursor=pointer]'
+              - generic [ref=f1e99]:
+                - 'link "Mutt #835" [ref=f1e100] [cursor=pointer]':
+                  - /url: /nfts/005
+                - paragraph [ref=f1e101]: 0.86 ETH
+                - 'button "Adicionar Mutt #835 ao carrinho" [ref=f1e102] [cursor=pointer]'
+            - article [ref=f1e103]:
+              - generic [ref=f1e104]:
+                - 'link "Ver Mutt #836" [ref=f1e105] [cursor=pointer]':
+                  - /url: /nfts/006
+                  - img "Retrato Mutt 006" [ref=f1e106]
+                - 'button "Favoritar Mutt #836" [ref=f1e107] [cursor=pointer]'
+              - generic [ref=f1e108]:
+                - 'link "Mutt #836" [ref=f1e109] [cursor=pointer]':
+                  - /url: /nfts/006
+                - paragraph [ref=f1e110]: 1.64 ETH
+                - 'button "Adicionar Mutt #836 ao carrinho" [ref=f1e111] [cursor=pointer]'
+            - article [ref=f1e112]:
+              - generic [ref=f1e113]:
+                - 'link "Ver Mutt #837" [ref=f1e114] [cursor=pointer]':
+                  - /url: /nfts/007
+                  - img "Retrato Mutt 007" [ref=f1e115]
+                - 'button "Favoritar Mutt #837" [ref=f1e116] [cursor=pointer]'
+              - generic [ref=f1e117]:
+                - 'link "Mutt #837" [ref=f1e118] [cursor=pointer]':
+                  - /url: /nfts/007
+                - paragraph [ref=f1e119]: 0.000000000000000001 ETH
+                - 'button "Adicionar Mutt #837 ao carrinho" [ref=f1e120] [cursor=pointer]'
+            - article [ref=f1e121]:
+              - generic [ref=f1e122]:
+                - 'link "Ver Mutt #838" [ref=f1e123] [cursor=pointer]':
+                  - /url: /nfts/008
+                  - img "Retrato Mutt 008" [ref=f1e124]
+                - 'button "Favoritar Mutt #838" [ref=f1e125] [cursor=pointer]'
+              - generic [ref=f1e126]:
+                - 'link "Mutt #838" [ref=f1e127] [cursor=pointer]':
+                  - /url: /nfts/008
+                - paragraph [ref=f1e128]: 3.8 ETH
+                - 'button "Adicionar Mutt #838 ao carrinho" [ref=f1e129] [cursor=pointer]'
+            - article [ref=f1e130]:
+              - generic [ref=f1e131]:
+                - 'link "Ver Mutt #839" [ref=f1e132] [cursor=pointer]':
+                  - /url: /nfts/009
+                  - img "Retrato Mutt 009" [ref=f1e133]
+                - 'button "Favoritar Mutt #839" [ref=f1e134] [cursor=pointer]'
+              - generic [ref=f1e135]:
+                - 'link "Mutt #839" [ref=f1e136] [cursor=pointer]':
+                  - /url: /nfts/009
+                - paragraph [ref=f1e137]: 1.48 ETH
+                - 'button "Adicionar Mutt #839 ao carrinho" [ref=f1e138] [cursor=pointer]'
+          - navigation "Paginacao" [ref=f1e139]:
+            - button "Pagina anterior" [disabled]
+            - generic [ref=f1e140]: Pagina 1 de 3
+            - button "Proxima pagina" [ref=f1e141] [cursor=pointer]
+    - contentinfo [ref=f1e142]:
+      - generic [ref=f1e143]:
+        - generic [ref=f1e144]:
+          - heading "Seguranca da carteira" [level=2] [ref=f1e148]
+          - paragraph [ref=f1e149]: Procedencia e edicoes verificadas em cada colecao.
+        - generic [ref=f1e150]:
+          - heading "Criadores em destaque" [level=2] [ref=f1e153]
+          - paragraph [ref=f1e154]: Arte digital com identidade e colecoes de tiragem limitada.
+        - generic [ref=f1e155]:
+          - heading "Alertas de lancamentos" [level=2] [ref=f1e159]
+          - paragraph [ref=f1e160]: Novas colecoes, novas perspectivas.
+        - generic [ref=f1e161]:
+          - heading "Seu proximo colecionavel" [level=2] [ref=f1e162]
+          - link "Explorar mercado" [ref=f1e163] [cursor=pointer]:
+            - /url: /#catalogo
+      - generic [ref=f1e164]:
+        - link "KURIO" [ref=f1e165] [cursor=pointer]:
+          - /url: /
+        - generic [ref=f1e166]: Feito para colecionadores, criadores e curiosos.
+      - generic [ref=f1e167]:
+        - generic [ref=f1e168]:
+          - heading "Meu perfil" [level=2] [ref=f1e169]
+          - link "Meu perfil" [ref=f1e170] [cursor=pointer]:
+            - /url: /profile
+          - link "Carteiras" [ref=f1e171] [cursor=pointer]:
+            - /url: /wallets
+          - link "Pedidos" [ref=f1e172] [cursor=pointer]:
+            - /url: /orders
+        - generic [ref=f1e173]:
+          - heading "Colecoes" [level=2] [ref=f1e174]
+          - link "Arte digital" [ref=f1e175] [cursor=pointer]:
+            - /url: /?categories=%5B%22original%22%5D
+          - link "Raridades" [ref=f1e176] [cursor=pointer]:
+            - /url: /?categories=%5B%22rare%22%5D
+          - link "Novidades" [ref=f1e177] [cursor=pointer]:
+            - /url: /?categories=%5B%22new%22%5D
+        - generic [ref=f1e178]:
+          - heading "Carteiras compativeis" [level=2] [ref=f1e179]
+          - paragraph [ref=f1e180]: Ethereum · Polygon
+          - paragraph [ref=f1e181]: Transacoes simuladas
+      - paragraph [ref=f1e182]: © 2026 Kurio. Propriedade digital para todos.
+```

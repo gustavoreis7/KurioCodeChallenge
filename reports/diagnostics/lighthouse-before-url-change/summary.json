@@ -1,0 +1,969 @@
+{
+  "environment": {
+    "node": "v22.23.3",
+    "lighthouse": "13.5.0",
+    "os": "win32 10.0.26200",
+    "cpu": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+    "date": "2026-10-03T23:32:56.142Z",
+    "origin": "http://127.0.0.1:4173",
+    "conditions": "Production build, default MSW, fresh Chrome profile each run, Lighthouse default simulated throttling."
+  },
+  "measurements": [
+    {
+      "page": "inicio",
+      "profile": "mobile",
+      "scores": {
+        "performance": 74,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 4219.048000000001,
+      "cls": 0.0007036670180516454,
+      "tbt": 342.5,
+      "runs": [
+        {
+          "scores": {
+            "performance": 74,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 4219.048000000001,
+          "cls": 0.0007036670180516454,
+          "tbt": 342.5,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "2.7 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "4.2 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "2.7 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "340 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "310 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.3 s"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 620 ms"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "title": "Minimize main-thread work",
+              "displayValue": "2.2 s"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 150 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 69,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 4221.588,
+          "cls": 0.0007036670180516454,
+          "tbt": 457.8530000000003,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "3.0 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "4.2 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "3.1 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "460 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "440 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.4 s"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 620 ms"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "title": "Minimize main-thread work",
+              "displayValue": "2.8 s"
+            },
+            {
+              "id": "bootup-time",
+              "title": "Reduce JavaScript execution time",
+              "displayValue": "1.5 s"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 150 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 78,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 4018.4250000000006,
+          "cls": 0.0007036670180516454,
+          "tbt": 262.5,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "2.6 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "4.0 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "2.6 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "260 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "270 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.1 s"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 610 ms"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 150 ms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "inicio",
+      "profile": "desktop",
+      "scores": {
+        "performance": 99,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 961,
+      "cls": 0.02051229222645731,
+      "tbt": 35,
+      "runs": [
+        {
+          "scores": {
+            "performance": 99,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 926.788,
+          "cls": 0.02051229222645731,
+          "tbt": 26,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "0.6 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "0.9 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "80 ms"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 170 ms"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 99,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 995.0276000000001,
+          "cls": 0.02051229222645731,
+          "tbt": 59,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "0.6 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "1.0 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "110 ms"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 180 ms"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 99,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 961,
+          "cls": 0.02524468058991525,
+          "tbt": 35,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "0.6 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "1.0 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "90 ms"
+            },
+            {
+              "id": "redirects",
+              "title": "Avoid multiple page redirects",
+              "displayValue": "Est savings of 180 ms"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 11 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "detalhe",
+      "profile": "mobile",
+      "scores": {
+        "performance": 74,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 4039.1109500000002,
+      "cls": 0.000126744957764355,
+      "tbt": 410.5,
+      "runs": [
+        {
+          "scores": {
+            "performance": 72,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 4065.51735,
+          "cls": 0.000126744957764355,
+          "tbt": 487,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "4.1 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "490 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "400 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.2 s"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "title": "Minimize main-thread work",
+              "displayValue": "2.5 s"
+            },
+            {
+              "id": "bootup-time",
+              "title": "Reduce JavaScript execution time",
+              "displayValue": "1.4 s"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 300 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 79,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 3882.24415,
+          "cls": 0.000126744957764355,
+          "tbt": 306,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "3.9 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "310 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "290 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.1 s"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 300 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 74,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 4039.1109500000002,
+          "cls": 0.000126744957764355,
+          "tbt": 410.5,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "first-contentful-paint",
+              "title": "First Contentful Paint",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "4.0 s"
+            },
+            {
+              "id": "speed-index",
+              "title": "Speed Index",
+              "displayValue": "2.3 s"
+            },
+            {
+              "id": "total-blocking-time",
+              "title": "Total Blocking Time",
+              "displayValue": "410 ms"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "370 ms"
+            },
+            {
+              "id": "interactive",
+              "title": "Time to Interactive",
+              "displayValue": "4.1 s"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "title": "Minimize main-thread work",
+              "displayValue": "2.2 s"
+            },
+            {
+              "id": "bootup-time",
+              "title": "Reduce JavaScript execution time",
+              "displayValue": "1.3 s"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 300 ms"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "detalhe",
+      "profile": "desktop",
+      "scores": {
+        "performance": 96,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "lcp": 861.49145,
+      "cls": 0.11267475436364359,
+      "tbt": 42,
+      "runs": [
+        {
+          "scores": {
+            "performance": 97,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 866.4008,
+          "cls": 0.09803276873756,
+          "tbt": 9,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "0.9 s"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "title": "Cumulative Layout Shift",
+              "displayValue": "0.098"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 861.49145,
+          "cls": 0.11267475436364359,
+          "tbt": 49,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "0.9 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "100 ms"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "title": "Cumulative Layout Shift",
+              "displayValue": "0.113"
+            },
+            {
+              "id": "layout-shifts",
+              "title": "Avoid large layout shifts",
+              "displayValue": "2 layout shifts found"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "cls-culprits-insight",
+              "title": "Layout shift culprits"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        },
+        {
+          "scores": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100
+          },
+          "lcp": 858.2614,
+          "cls": 0.11267475436364359,
+          "tbt": 42,
+          "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+          "failures": [
+            {
+              "id": "largest-contentful-paint",
+              "title": "Largest Contentful Paint",
+              "displayValue": "0.9 s"
+            },
+            {
+              "id": "max-potential-fid",
+              "title": "Max Potential First Input Delay",
+              "displayValue": "90 ms"
+            },
+            {
+              "id": "cumulative-layout-shift",
+              "title": "Cumulative Layout Shift",
+              "displayValue": "0.113"
+            },
+            {
+              "id": "layout-shifts",
+              "title": "Avoid large layout shifts",
+              "displayValue": "2 layout shifts found"
+            },
+            {
+              "id": "unused-javascript",
+              "title": "Reduce unused JavaScript",
+              "displayValue": "Est savings of 77 KiB"
+            },
+            {
+              "id": "bf-cache",
+              "title": "Page prevented back/forward cache restoration",
+              "displayValue": "1 failure reason"
+            },
+            {
+              "id": "cls-culprits-insight",
+              "title": "Layout shift culprits"
+            },
+            {
+              "id": "document-latency-insight",
+              "title": "Document request latency",
+              "displayValue": "Est savings of 6 KiB"
+            },
+            {
+              "id": "forced-reflow-insight",
+              "title": "Forced reflow"
+            },
+            {
+              "id": "lcp-discovery-insight",
+              "title": "LCP request discovery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "title": "Render-blocking requests",
+              "displayValue": "Est savings of 40 ms"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
