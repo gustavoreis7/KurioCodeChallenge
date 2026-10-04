@@ -3,6 +3,8 @@
 React/TypeScript com TanStack Router v1, Query v5, Axios, Socket.IO, MSW e
 componentes shadcn/ui. Regras oficiais: `Challenge.md`.
 
+Hospedado em: https://kuriocodechallenge.vercel.app/
+
 ## Executar
 
 Use Node 22.19+ ou 24 LTS. O projeto tambem inclui Node 22 local para os scripts
