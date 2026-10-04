@@ -134,35 +134,6 @@ Uma faixa opaca protege os controles fixos contra texto sob o botao desabilitado
 Capturas de desenvolvimento ficam em `reports/design-*-{largura}.png`.
 
 Referencia: https://www.figma.com/design/Ff0SksUi7UFtPWUO8kyNtw/Frontend-Challenge
-Composicao baseada nas capturas fornecidas: marca Kurio, fundo escuro,
-tipografia mono, laranja, catalogo com filtros laterais, formularios compactos,
-modais e recibo. A consulta web direta falhou, mas o prototipo renderizou no
-Chrome. O frame inicial e suas secoes inferiores foram inspecionados e capturados
-em reports/figma-prototype.png e reports/figma-lower.png.
-Os quatro retratos originais carregados pelo prototipo foram preservados em
-src/assets/figma, com copias WebP locais em public/artworks. Eles substituem os
-JPGs provisorios no catalogo, detalhe e compras novas; precos/nomes/estoque seguem
-as fixtures da API. A inicializacao atualiza as URLs, a galeria e os metadados de rede/colecao ausentes nos NFTs
-persistidos, sem resetar contas, carrinhos, valores ou snapshots de pedidos.
-As URLs JPG antigas de desenvolvimento/build permanecem em public/src/assets e
-public/assets para recibos e avatares persistidos; nao sao rebaixadas para os
-novos retratos nem carregadas pelo catalogo novo.
-Os 15 frames foram capturados em `reports/figma-frame-01.png` ate
-`reports/figma-frame-15.png` por `scripts/inspect-figma.mjs`. Os seis frames
-mobile orientam a composicao especifica abaixo, sem copiar a moldura do aparelho.
-Nao ha certificacao pixel a pixel de todos os frames do prototipo.
-O catalogo inclui destaque lateral, paginacao numerada, exploracao e diario.
-O rodape compartilha quatro colunas, simbolos W/C/D, faixa de contato e redes.
-Newsletter/redes ficam indisponiveis; ajuda/editorial informam indisponibilidade,
-sem simular inscricao ou navegacao bem-sucedida para paginas fora do escopo.
-O cabecalho usa navegacao centralizada, Entrar destacado e badge real do carrinho.
-As nove colecoes e as tres redes do layout participam dos contratos REST, das
-fixtures, dos filtros locais usados pelo Socket.IO e dos search params do Router.
-Contadores sao facets globais calculadas pelo MSW, nao numeros ilustrativos do Figma.
-O slider Radix possui dois controles acessiveis: coordenadas inteiras convertem
-para strings ETH via bigint. A digitacao exata preserva ate 18 casas decimais.
-Filtros legados e disponibilidade continuam em Mais filtros. Solana e metadado
-do NFT; pagamentos/carteiras continuam no contrato Ethereum/Polygon.
 
 `src/responsive.css` concentra composicao por tela e breakpoint; cores e
 componentes compartilhados continuam em `src/styles.css`. No mobile, a busca
@@ -216,7 +187,7 @@ CLS do detalhe na mediana. Performance mobile ainda nao atinge 90.
 Consulte [reports/VERIFICATION.md](reports/VERIFICATION.md) para evidencias,
 metricas, limites e proximas oportunidades de otimizacao.
 
-Vercel foi escolhida para `KurioFrontEndChallenge`. O build especifico adiciona
+Vercel foi escolhida para `Kuriocodechallenge`. O build especifico adiciona
 o adapter Nitro sem alterar o desenvolvimento/preview padrao.
 O fallback WASM oficial do Rolldown permite compilar quando o binding nativo
 nao carrega neste Windows; ele participa somente do build, nao da UI.
